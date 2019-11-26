@@ -1,0 +1,26 @@
+.para{
+    border: 30px solid green;
+    padding-top : 50px;    
+    padding-bottom : 50px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-size: 12px;
+    font-weight: bold;
+
+}
+h1{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+}
+.t1{
+    text-transform: uppercase;
+    word-spacing: 5em;
+    letter-spacing: 2.5em;
+}
+a{
+    text-decoration: underline/none;
+    font-weight: bold
+}
+a:hover{color: brown}
