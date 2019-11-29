@@ -1,0 +1,36 @@
+<div class="card">
+    <div class="card-header">
+        PRODUCT MANAGEMENT
+    </div>
+</div>
+
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table" *ngIf='products && products.length'>
+            <thead>
+                <tr>
+                    <th><input type=button class="btn btn-info" (click)="showimg()" value="{{val}}" ></th>
+                    <th>Code</th>
+                    <th>Products</th>
+                    
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>FiveStar Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of products">
+                    <td ><img src="{{i.imageUrl}}" *ngIf='sh==true' style="width:100px; height:100px"></td>
+                    <td>{{i.productId}}</td>
+                    <td>{{i.productName}}</td>
+                    
+                    <td>{{i.description}}</td>
+                    <td>{{i.price}}</td>
+                    <td>{{i.starRating}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
